@@ -28,7 +28,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack-dev": "webpack-dev-server --mode development",
     "webpack-prod": "webpack --mode production",
-    "webpack-bundle":  "nodemon dist/bundle.js"
+    "webpack-bundle": "nodemon dist/bundle.js",
+    "create-docker-image" : "docker build . -t express-typescript-docker",
+    "run-docker": "docker run -p 3000:3000 -d express-typescript-docker:latest",
+    "stop-docker": "docker rm `docker ps -aq`"
+
   },
   "author": "Bryan Briones",
   "license": "ISC"
