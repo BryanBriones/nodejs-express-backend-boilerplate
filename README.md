@@ -1,4 +1,4 @@
-# CGI BACKEND END
+# NodeJs Typescript Express
 ## Install dependencies
 npm install
 
